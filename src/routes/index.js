@@ -43,7 +43,9 @@ export default function Router() {
         { path: '/', element: <LandingPage /> },
         { path: '/team', element: <TeamPage /> },
         { path: '/tokenomics', element: <TokenomicsPage /> },
-        { path: '/privacy', element: <PrivacyPage /> }
+        { path: '/privacy', element: <PrivacyPage /> },
+        { path: '/terms', element: <TermsPage /> },
+        { path: '/cookies', element: <CookiesPage /> }
       ]
     }
   ]);
@@ -53,3 +55,5 @@ const LandingPage = Loadable(lazy(() => import('../pages/LandingPage')));
 const TeamPage = Loadable(lazy(() => import('../pages/TeamPage')));
 const TokenomicsPage = Loadable(lazy(() => import('../pages/TokenomicsPage')));
 const PrivacyPage = Loadable(lazy(() => import('../pages/PrivacyPage')));
+const TermsPage = Loadable(lazy(() => import('../pages/TermsPage')));
+const CookiesPage = Loadable(lazy(() => import('../pages/CookiesPage')));

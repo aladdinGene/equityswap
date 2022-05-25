@@ -25,6 +25,7 @@ export default function Content() {
               <br /><br />
               The data controller of your Personal Information is EquitySwap LLC
             </Typography>
+            
             <Typography component="p" variant="overline" sx={{ textTransform: 'none', marginBottom: 1, color: '#141721', display: 'block', fontFamily: 'Nunito', fontWeight: 400, fontSize: 18, lineHeight: '26px' }}>
               What information is collected?
             </Typography>
