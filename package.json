@@ -41,6 +41,7 @@
     "@emotion/styled": "^11.3.0",
     "@fontsource/montserrat": "^4.5.10",
     "@fontsource/poppins": "^4.5.8",
+    "@fontsource/quicksand": "^4.5.9",
     "@fontsource/raleway": "^4.5.8",
     "@fontsource/roboto": "^4.5.7",
     "@fullcalendar/daygrid": "^5.8.0",

@@ -13,14 +13,14 @@ const LINKS = [
       { name: 'FAQ', href: '#' },
       { name: 'Audit', href: '#' },
       { name: 'Explorer', href: '#' },
-      { name: 'Technology', href: '#' }
+      { name: 'Technology', href: '/tokenomics' }
     ]
   },
   {
     headline: 'Company',
     children: [
       { name: 'Team', href: '/team' },
-      { name: 'Privacy Policy', href: '#' },
+      { name: 'Privacy Policy', href: '/privacy' },
       { name: 'Terms of Service', href: '#' },
       { name: 'Cookie Policy', href: '#' }
     ]

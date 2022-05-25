@@ -48,6 +48,12 @@ import '@fontsource/raleway/700.css';
 import '@fontsource/raleway/800.css';
 import '@fontsource/raleway/900.css';
 
+import '@fontsource/quicksand/300.css';
+import '@fontsource/quicksand/400.css';
+import '@fontsource/quicksand/500.css';
+import '@fontsource/quicksand/600.css';
+import '@fontsource/quicksand/700.css';
+
 // ----------------------------------------------------------------------
 
 ReactDOM.render(
