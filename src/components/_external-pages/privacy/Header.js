@@ -1,31 +1,35 @@
 /* eslint-disable prettier/prettier */
 // material
 import { experimentalStyled as styled } from '@material-ui/core/styles';
-import { Box, Grid, Container, Typography, Stack, Button } from '@material-ui/core';
+import { Box, Container, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------
 
-const RootStyle = styled('div')(() => ({
+const RootStyle = styled('div')(({ theme }) => ({
   marginTop: '88px',
   padding: 0,
-  position: 'relative'
+  position: 'relative',
+  [theme.breakpoints.down('md')]: {
+    marginTop: '64px'
+  }
 }));
 // ----------------------------------------------------------------------
 
 export default function Header() {
   return (
     <RootStyle>
-        <Box component="img" src="/static/home/privacy-bg.svg" alt="privacy bg" sx={{ width: '100%' }} />
+        <Box component="img" src="/static/home/privacy-bg.png" alt="privacy bg" sx={{ width: { xs: 'auto', md: '100%' }, height: { xs: '100%', md: 'auto' }, position: { xs: 'absolute', md: 'relative' } }} />
         <Container maxWidth="lg" sx={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)'
+            position: { xs: 'relative', md: 'absolute' },
+            top: { md: '50%' },
+            left: { md: '50%' },
+            transform: { md: 'translate(-50%, -50%)' },
+            padding: { xs: '90px 0', md: 0 }
         }}>
-            <Typography component="p" variant="overline" sx={{ textAlign: 'center', textTransform: 'none', marginBottom: 2, color: 'common.white', display: 'block', fontFamily: 'Montserrat', fontWeight: 400, fontSize: '38px', lineHeight: '48px' }}>
+            <Typography component="p" variant="overline" sx={{ textAlign: 'center', textTransform: 'none', marginBottom: 2, color: 'common.white', display: 'block', fontFamily: 'Nunito', fontWeight: 400, fontSize: '38px', lineHeight: '48px' }}>
                 Privacy & Policy
             </Typography>
-            <Typography component="p" variant="overline" sx={{ textAlign: 'center', textTransform: 'none', color: 'common.white', display: 'block', fontFamily: 'Montserrat', fontWeight: 400, fontSize: '17px', lineHeight: '27px' }}>
+            <Typography component="p" variant="overline" sx={{ textAlign: 'center', textTransform: 'none', color: 'common.white', display: 'block', fontFamily: 'Nunito', fontWeight: 400, fontSize: '17px', lineHeight: '27px' }}>
                 Last modified: 01 May 2022
             </Typography>
         </Container>
