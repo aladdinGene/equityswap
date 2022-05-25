@@ -8,13 +8,15 @@ import { Ourteam, Jobs } from '../components/_external-pages/team';
 // ----------------------------------------------------------------------
 
 const RootStyle = styled(Page)({
-  height: '100%'
+  height: '100%',
+  backgroundImage: `url("/static/home/team-page-bg.png")`,
+  backgroundPosition: 'right 30%',
+  backgroundRepeat: 'no-repeat no-repeat'
 });
 
-const ContentStyle = styled('div')(({ theme }) => ({
+const ContentStyle = styled('div')(() => ({
   overflow: 'hidden',
-  position: 'relative',
-  backgroundColor: theme.palette.background.default
+  position: 'relative'
 }));
 
 // ----------------------------------------------------------------------

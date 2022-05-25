@@ -7,7 +7,6 @@ import { Link as RouterLink } from 'react-router-dom';
 // ----------------------------------------------------------------------
 
 const RootStyle = styled('div')(({ theme }) => ({
-  backgroundColor: '#FFFFFF',
   padding: theme.spacing(10, 0, 20)
 }));
 

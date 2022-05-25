@@ -6,7 +6,6 @@ import { Box, Grid, Container, Typography, Stack, Button } from '@material-ui/co
 // ----------------------------------------------------------------------
 
 const RootStyle = styled('div')(({ theme }) => ({
-  backgroundColor: '#FFFFFF',
   padding: theme.spacing(5, 0, 10)
 }));
 
