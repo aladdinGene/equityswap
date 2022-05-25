@@ -8,17 +8,7 @@ import { MotionInView, varFadeInUp } from '../../animate';
 // ----------------------------------------------------------------------
 
 const RootStyle = styled('div')(() => ({
-  backgroundColor: '#141721'
-}));
-
-const SubRootStyle = styled('div')(({ theme }) => ({
-    padding: theme.spacing(20, 0, 10),
-    backgroundPosition: 'left center',
-    backgroundRepeat: 'no-repeat no-repeat',
-    [theme.breakpoints.up('md')]: {
-        backgroundImage: 'url("/static/home/landing-mint-img.png")',
-        padding: theme.spacing(20, 0, 40)
-    }
+  backgroundColor: '#FFFFFF'
 }));
 
 const ContentStyle = styled('div')(({ theme }) => ({
@@ -40,8 +30,10 @@ const ContentStyle = styled('div')(({ theme }) => ({
 export default function Ourteam() {
   return (
     <RootStyle>
-      <SubRootStyle>
-        <Container maxWidth="lg" sx={{ position: 'relative' }}>
+        <Container maxWidth="lg" sx={{ position: 'relative', paddingTop: 10 }}>
+            <Typography component="p" variant="overline" sx={{ textTransform: 'none', mb: 4, color: 'common.black', display: 'block', fontFamily: 'Montserrat', fontWeight: 600, fontSize: { xs: 32, md: 42 }, lineHeight: { xs: '70px', md: '92px' } }}>
+                Our Team
+            </Typography>
             <Grid container spacing={5} justifyContent="space-between" alignItems="flex-start">
             <Grid item xs={12} md={6} sx={{ position: 'relative' }}>
                 <MotionInView threshold={0.5} variants={varFadeInUp}>
@@ -59,7 +51,6 @@ export default function Ourteam() {
             </Grid>
             </Grid>
         </Container>
-      </SubRootStyle>
     </RootStyle>
   );
 }
