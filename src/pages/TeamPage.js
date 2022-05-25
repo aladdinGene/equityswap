@@ -3,7 +3,7 @@
 import { experimentalStyled as styled } from '@material-ui/core/styles';
 // components
 import Page from '../components/Page';
-import { Ourteam } from '../components/_external-pages/team';
+import { Ourteam, Jobs } from '../components/_external-pages/team';
 
 // ----------------------------------------------------------------------
 
@@ -24,6 +24,7 @@ export default function TeamPage() {
     <RootStyle title="The starting point for your next project | Minimal-UI" id="move_top">
       <ContentStyle>
           <Ourteam />
+          <Jobs />
       </ContentStyle>
     </RootStyle>
   );
