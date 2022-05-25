@@ -10,7 +10,7 @@ const LINKS = [
   {
     headline: 'Service',
     children: [
-      { name: 'FAQ', href: '#' },
+      { name: 'FAQ', href: '/faq' },
       { name: 'Audit', href: '#' },
       { name: 'Explorer', href: '#' },
       { name: 'Technology', href: '/tokenomics' }
