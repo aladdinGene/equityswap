@@ -26,14 +26,17 @@ const ContentStyle = styled((props) => <Stack spacing={5} {...props} />)(({ them
   }
 }));
 
-const HeroImgStyle = styled(motion.img)(() => ({
+const HeroImgStyle = styled(motion.img)(({ theme }) => ({
   top: 0,
   right: '-40%',
   bottom: 0,
   zIndex: 8,
   margin: 'auto',
   position: 'absolute',
-  filter: `drop-shadow(40px 80px 80px rgba(0, 0, 0, 0.48))`
+  filter: `drop-shadow(40px 80px 80px rgba(0, 0, 0, 0.48))`,
+  [theme.breakpoints.up('xl')]: {
+    right: 'calc(50% - 1600px)'
+  }
 }));
 
 // ----------------------------------------------------------------------

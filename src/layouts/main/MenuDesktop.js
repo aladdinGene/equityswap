@@ -113,6 +113,7 @@ function MenuDesktopItem({ item, pathname, isHome, isOpen, isOffset, onOpen, onC
               return (
                 <ListItem
                   key={index}
+                  // href={path}
                   to={path}
                   component={RouterLink}
                   underline="none"
@@ -142,8 +143,9 @@ function MenuDesktopItem({ item, pathname, isHome, isOpen, isOffset, onOpen, onC
   return (
     <LinkStyle
       key={title}
-      to={path}
-      component={RouterLink}
+      href={path}
+      // to={path}
+      // component={RouterLink}
       sx={{
         ...(isHome && { color: 'common.white' }),
         ...(isOffset && { color: 'text.primary' }),

@@ -13,7 +13,7 @@ const RootStyle = styled('div')(() => ({
 
 const SubRootStyle = styled('div')(({ theme }) => ({
     padding: theme.spacing(20, 0, 10),
-    backgroundPosition: 'left center',
+    backgroundPosition: 'calc(50% - 310px) center',
     backgroundRepeat: 'no-repeat no-repeat',
     [theme.breakpoints.up('md')]: {
         backgroundImage: 'url("/static/home/landing-mint-img.png")',
