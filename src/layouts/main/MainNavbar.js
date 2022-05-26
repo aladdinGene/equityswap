@@ -43,12 +43,13 @@ const ToolbarShadowStyle = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function MainNavbar() {
-  const isOffset = useOffSetTop(100);
+  // const isOffset = useOffSetTop(100);
+  const isOffset = false;
   const { pathname } = useLocation();
   const isHome = pathname === '/';
 
   return (
-    <AppBar color={isHome ? 'transparent' : 'default'} sx={{ boxShadow: 0 }}>
+    <AppBar color={isHome ? 'transparent' : 'default'} sx={{ boxShadow: 0, position: 'absolute', paddingTop: '35px' }}>
       <ToolbarStyle
         disableGutters
         sx={{
@@ -83,7 +84,7 @@ export default function MainNavbar() {
               />
             )}
           </RouterLink>
-
+          {!isHome && <Box sx={{ flexGrow: 1 }} />}
           <MHidden width="mdDown">
             <MenuDesktop
               isOffset={isOffset}
@@ -97,7 +98,7 @@ export default function MainNavbar() {
           <Button
             variant="contained"
             target="_blank"
-            href="#"
+            href="https://app.equityswap.io"
             sx={{
               fontSize: { xs: '12px', md: '16px' },
               fontFamily: 'Poppins',
@@ -105,7 +106,8 @@ export default function MainNavbar() {
               lineHeight: { xs: '30px', md: '41px' },
               fontWeight: 400,
               borderRadius: '0px',
-              border: 'solid 2px #FFF'
+              border: isHome ? 'solid 2px #FFF' : 'solid 2px #000',
+              boxShadow: 'none'
             }}
           >
             Launch App

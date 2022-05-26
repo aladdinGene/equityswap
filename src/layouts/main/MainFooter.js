@@ -12,8 +12,7 @@ const LINKS = [
     children: [
       { name: 'FAQ', href: '/faq' },
       { name: 'Audit', href: '#' },
-      { name: 'Explorer', href: '#' },
-      { name: 'Technology', href: '/tokenomics' }
+      { name: 'Explorer', href: '#' }
     ]
   },
   {
@@ -36,7 +35,7 @@ const RootStyle = styled('div')(() => ({
 
 export default function MainFooter() {
   return (
-    <RootStyle>
+    <RootStyle id="footer">
       <Divider />
       <Container maxWidth="lg" sx={{ pt: 5 }}>
         <Grid
@@ -45,7 +44,7 @@ export default function MainFooter() {
           sx={{ textAlign: { xs: 'center', md: 'left' } }}
         >
           <Grid item xs={8} md={3} mt={3}>
-            <ScrollLink to="move_top" spy smooth>
+            <ScrollLink to="move_top" spy smooth mb={8}>
               <Box
                 component="img"
                 src="/static/home/logo-sm.png"
@@ -66,7 +65,7 @@ export default function MainFooter() {
                 paddingLeft: '5px',
                 maxWidth: '240px',
                 textAlign: { xs: 'center', md: 'left' },
-                margin: { xs: '0 auto', md: '0' }
+                margin: { xs: '0 auto', md: '30px 0 0' }
               }}
             >
               Bringing real world assets to the blockchain
@@ -78,7 +77,7 @@ export default function MainFooter() {
               {LINKS.map((list) => {
                 const { headline, children } = list;
                 return (
-                  <Grid item xs={12} md={3} key={headline}>
+                  <Grid item xs={6} md={3} key={headline}>
                     <Typography
                       component="p"
                       variant="overline"
@@ -107,7 +106,7 @@ export default function MainFooter() {
                           fontWeight: 500,
                           fontSize: '16px',
                           lineHeight: 1.5,
-                          marginTop: '20px'
+                          marginTop: '30px'
                         }}
                       >
                         {link.name}

@@ -11,7 +11,7 @@ const ICON_SIZE = {
 const menuConfig = [
   {
     title: 'Home',
-    path: '/',
+    path: 'https://equityswap.io',
     icon: <Icon icon={homeFill} {...ICON_SIZE} />
   },
   {
@@ -21,7 +21,7 @@ const menuConfig = [
   },
   {
     title: 'Docs',
-    path: '#',
+    path: 'https://docs.equityswap.io',
     icon: <Icon icon={homeFill} {...ICON_SIZE} />
   },
   {
@@ -29,15 +29,15 @@ const menuConfig = [
     path: '#',
     icon: <Icon icon={homeFill} {...ICON_SIZE} />,
     children: [
-      { title: 'Sub Resource', path: '#' },
-      { title: 'Sub Resource', path: '#' },
-      { title: 'Sub Resource', path: '#' },
-      { title: 'Sub Resource', path: '#' }
+      { title: 'Whitepaper', path: '#' },
+      { title: 'Economics paper', path: '#' },
+      { title: 'Token Metrics', path: '/tokenomics' },
+      { title: 'Ecosystem', path: '#' }
     ]
   },
   {
     title: 'Contact',
-    path: '#',
+    path: '#footer',
     icon: <Icon icon={homeFill} {...ICON_SIZE} />
   }
 ];

@@ -45,7 +45,7 @@ export default function LandingMint() {
             <Grid container spacing={5} justifyContent="space-between" alignItems="flex-start">
             <Grid item xs={12} md={6} sx={{ position: 'relative' }}>
                 <MotionInView threshold={0.5} variants={varFadeInUp}>
-                <Box component="img" alt="light mode" src="/static/home/landing-mint-img.png" sx={{ margin: { xs: 'auto', md: 'auto 0 auto auto' }, display: { xs: 'block', md: 'none' } }} />
+                  <Box component="img" alt="light mode" src="/static/home/landing-mint-img.png" sx={{ margin: { xs: 'auto', md: 'auto 0 auto auto' }, display: { xs: 'block', md: 'none' } }} />
                 </MotionInView>
             </Grid>
             <Grid item xs={12} md={6}>

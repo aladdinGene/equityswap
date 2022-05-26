@@ -37,7 +37,7 @@ export default function LandingConnectivity() {
         <Grid container spacing={5} direction="row-reverse" justifyContent="space-between">
           <Grid item xs={12} md={6} sx={{ position: 'relative' }}>
             <MotionInView threshold={0.5} variants={varFadeInUp}>
-              <Box component="img" alt="light mode" src="/static/home/landing-connectivity-img.png" sx={{ margin: { xs: 'auto', md: 'auto 0 auto auto' }, maxWidth: { xs: 300, md: '100%' } }} />
+              <Box component="img" alt="light mode" src="/static/home/landing-connectivity-img.png" sx={{ margin: { xs: 'auto', md: 'auto auto auto 0' }, maxWidth: { xs: 300, md: '100%' } }} />
             </MotionInView>
           </Grid>
           <Grid item xs={12} md={6}>

@@ -38,7 +38,7 @@ export default function LandingStake() {
         <Typography component="p" sx={{ textTransform: 'none', color: '#000000', display: 'block', fontFamily: 'Poppins', fontWeight: 400, fontSize: 22, lineHeight: '33px', textAlign: 'left' }}>
             Our Partners
         </Typography>
-        <Box component="img" alt="landing-multichain-header" src="/static/home/landing-multichain-header.png" sx={{ margin: '0 auto' }} />
+        <Box component="img" alt="landing-multichain-header" src="/static/home/landing-multichain-header.png" sx={{ margin: '0 auto 50px' }} />
         <Grid container spacing={5} direction="row-reverse" justifyContent="space-between" alignItems="center">
           <Grid item xs={12} md={6} sx={{ position: 'relative' }}>
             <MotionInView threshold={0.5} variants={varFadeInUp}>

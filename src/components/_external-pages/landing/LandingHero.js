@@ -9,16 +9,7 @@ import { varFadeInRight, varWrapEnter, varFadeInUp } from '../../animate';
 const RootStyle = styled(motion.div)(({ theme }) => ({
   position: 'relative',
   backgroundColor: '#141721',
-  overflow: 'hidden',
-  [theme.breakpoints.up('md')]: {
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100vh',
-    display: 'flex',
-    position: 'fixed',
-    alignItems: 'center'
-  }
+  overflow: 'hidden'
 }));
 
 const ContentStyle = styled((props) => <Stack spacing={5} {...props} />)(({ theme }) => ({
@@ -27,8 +18,8 @@ const ContentStyle = styled((props) => <Stack spacing={5} {...props} />)(({ them
   margin: 'auto',
   textAlign: 'center',
   position: 'relative',
-  paddingTop: theme.spacing(15),
-  paddingBottom: theme.spacing(15),
+  paddingTop: theme.spacing(25),
+  paddingBottom: theme.spacing(10),
   [theme.breakpoints.up('md')]: {
     margin: 'unset',
     textAlign: 'left'
@@ -66,7 +57,8 @@ export default function LandingHero() {
                   fontStyle: 'normal',
                   fontWeight: 600,
                   fontSize: { xs: '50px', md: '82px' },
-                  lineHeight: { xs: '60px', md: '92px' }
+                  lineHeight: { xs: '60px', md: '92px' },
+                  marginBottom: 0
                 }}
               >
                 Real World <br />
@@ -74,7 +66,7 @@ export default function LandingHero() {
               </Typography>
             </motion.div>
 
-            <motion.div variants={varFadeInRight}>
+            <motion.div variants={varFadeInRight} style={{ marginTop: '20px' }}>
               <Typography
                 sx={{
                   color: 'common.white',
@@ -96,7 +88,7 @@ export default function LandingHero() {
               <motion.img variants={varFadeInRight} src="/static/home/social-icons-group.png" />
             </Stack>
 
-            <motion.div variants={varFadeInRight}>
+            <motion.div variants={varFadeInRight} style={{ marginTop: '20px' }}>
               <Typography
                 sx={{
                   color: 'common.white',
@@ -114,7 +106,6 @@ export default function LandingHero() {
           </ContentStyle>
         </Container>
       </RootStyle>
-      <Box sx={{ height: { md: '100vh' } }} />
     </>
   );
 }
