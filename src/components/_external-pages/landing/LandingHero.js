@@ -51,7 +51,7 @@ export default function LandingHero() {
 
         <Container maxWidth="lg">
           <ContentStyle>
-            <motion.div variants={varFadeInRight}>
+            <Box>
               <Typography
                 variant="p"
                 sx={{
@@ -67,9 +67,9 @@ export default function LandingHero() {
                 Real World <br />
                 assets into the <br /> Blockchain
               </Typography>
-            </motion.div>
+            </Box>
 
-            <motion.div variants={varFadeInRight} style={{ marginTop: '20px' }}>
+            <Box style={{ marginTop: '20px' }}>
               <Typography
                 sx={{
                   color: 'common.white',
@@ -85,13 +85,13 @@ export default function LandingHero() {
                 methodology, building a game-changing decentralized platform where worldwide blockchain investors can
                 own shares of real assets in their blockchain wallets.
               </Typography>
-            </motion.div>
+            </Box>
 
             <Stack direction="row" spacing={1.5} justifyContent={{ xs: 'center', md: 'flex-start' }}>
               <motion.img variants={varFadeInRight} src="/static/home/social-icons-group.png" />
             </Stack>
 
-            <motion.div variants={varFadeInRight} style={{ marginTop: '20px' }}>
+            <Box style={{ marginTop: '20px' }}>
               <Typography
                 sx={{
                   color: 'common.white',
@@ -105,7 +105,7 @@ export default function LandingHero() {
               >
                 Tokenized assets, <br /> with collateral
               </Typography>
-            </motion.div>
+            </Box>
           </ContentStyle>
         </Container>
       </RootStyle>

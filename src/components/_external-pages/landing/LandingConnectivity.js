@@ -36,23 +36,23 @@ export default function LandingConnectivity() {
       <Container maxWidth="lg" sx={{ position: 'relative' }}>
         <Grid container spacing={5} direction="row-reverse" justifyContent="space-between">
           <Grid item xs={12} md={6} sx={{ position: 'relative' }}>
-            <MotionInView threshold={0.5} variants={varFadeInUp}>
+            <Box>
               <Box component="img" alt="light mode" src="/static/home/landing-connectivity-img.png" sx={{ margin: { xs: 'auto', md: 'auto auto auto 0' }, maxWidth: { xs: 300, md: '100%' } }} />
-            </MotionInView>
+            </Box>
           </Grid>
           <Grid item xs={12} md={6}>
             <ContentStyle>
-              <MotionInView variants={varFadeInUp}>
+              <Box>
                 <Typography component="p" variant="overline" sx={{ textTransform: 'none', mb: 4, color: 'common.black', display: 'block', fontFamily: 'Montserrat', fontWeight: 600, fontSize: { xs: 40, md: 64 }, lineHeight: '72px' }}>
                     Web3 wallet <br /> connectivity
                 </Typography>
-              </MotionInView>
+              </Box>
 
-              <MotionInView variants={varFadeInUp}>
+              <Box>
                 <Typography variant="p" sx={{ maxWidth: 540, textTransform: 'none', color: '#7C7B7B', display: 'block', fontFamily: 'Poppins', fontWeight: 400, fontSize: 16, lineHeight: '28px', opacity: 0.6, margin: { xs: 'auto' } }}>
                     Start using EquitySwap by simply connecting to your favourite Web3 wallet. We support the most popular ones!
                 </Typography>
-              </MotionInView>
+              </Box>
             </ContentStyle>
           </Grid>
         </Grid>

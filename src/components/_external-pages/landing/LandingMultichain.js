@@ -41,23 +41,23 @@ export default function LandingStake() {
         <Box component="img" alt="landing-multichain-header" src="/static/home/landing-multichain-header.png" sx={{ margin: '0 auto 50px' }} />
         <Grid container spacing={5} direction="row-reverse" justifyContent="space-between" alignItems="center">
           <Grid item xs={12} md={6} sx={{ position: 'relative' }}>
-            <MotionInView threshold={0.5} variants={varFadeInUp}>
+            <Box>
               <Box component="img" alt="light mode" src="/static/home/landing-multichain-img.png" sx={{ margin: { xs: 'auto', md: 'auto 0 auto auto' }, maxWidth: { xs: 300, md: '100%' } }} />
-            </MotionInView>
+            </Box>
           </Grid>
           <Grid item xs={12} md={6}>
             <ContentStyle>
-              <MotionInView variants={varFadeInUp}>
+              <Box>
                 <Typography component="p" variant="overline" sx={{ textTransform: 'none', marginBottom: 4, color: 'common.black', display: 'block', fontFamily: 'Montserrat', fontWeight: 600, fontSize: { xs: 40, md: 64 }, lineHeight: '72px', letterSpacing: 0 }}>
                     Multichain <br /> Support
                 </Typography>
-              </MotionInView>
+              </Box>
 
-              <MotionInView variants={varFadeInUp}>
+              <Box>
                 <Typography component="p" sx={{ maxWidth: 540, marginBottom: 4, textTransform: 'none', color: '#7C7B7B', display: 'block', fontFamily: 'Poppins', fontWeight: 400, fontSize: 16, lineHeight: '28px', opacity: 0.6, margin: { xs: 'auto', md: 'auto auto 32px auto' } }}>
                     EquitySwap is a next-gen web3 asset manager that lets you invest <br /> in traditional assets with the benefits of blockchain technology
                 </Typography>
-              </MotionInView>
+              </Box>
             </ContentStyle>
           </Grid>
         </Grid>

@@ -34,25 +34,25 @@ export default function LandingBuy() {
         <Container maxWidth="lg" sx={{ position: 'relative' }}>
             <Grid container spacing={5} justifyContent="space-between" alignItems="center">
                 <Grid item xs={12} md={6} sx={{ position: 'relative' }}>
-                    <MotionInView threshold={0.5} variants={varFadeInUp}>
+                    <Box>
                         <Box component="img" alt="light mode" src="/static/home/landing-buy-img1.png" sx={{ margin: { xs: 'auto', md: 'auto auto auto 0' }, maxWidth: { xs: '300px', md: '100%' } }} />
-                    </MotionInView>
+                    </Box>
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <ContentStyle>
-                        <MotionInView variants={varFadeInUp}>
+                        <Box>
                             <Typography component="p" variant="overline" sx={{ textTransform: 'none', mb: 4, color: 'common.white', display: 'block', fontFamily: 'Montserrat', fontWeight: 600, fontSize: { xs: 50, md: 82 }, lineHeight: { xs: '70px', md: '92px' } }}>
                                 Buy crypto <br /> in minutes, <br /> with fiat
                             </Typography>
-                        </MotionInView>
-                        <MotionInView variants={varFadeInUp}>
+                        </Box>
+                        <Box>
                             <Typography component="p" variant="overline" sx={{ textTransform: 'none', mb: 4, color: 'common.white', display: 'block', fontFamily: 'Poppins', fontWeight: 400, fontSize: 16, lineHeight: '28px', opacity: 0.6, letterSpacing: 0 }}>
                                 Don’t have any crypto? Do not worry! You can buy in a few minutes <br /> with card, Apple Pay or Google Pay
                             </Typography>
-                        </MotionInView>
-                        <MotionInView threshold={0.5} variants={varFadeInUp}>
+                        </Box>
+                        <Box>
                             <Box component="img" alt="light mode" src="/static/home/landing-buy-img2.png" sx={{ margin: { xs: 'auto', md: 'auto auto auto 0' } }} />
-                        </MotionInView>
+                        </Box>
                     </ContentStyle>
                 </Grid>
             </Grid>

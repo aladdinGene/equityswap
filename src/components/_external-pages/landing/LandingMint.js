@@ -44,17 +44,17 @@ export default function LandingMint() {
         <Container maxWidth="lg" sx={{ position: 'relative' }}>
             <Grid container spacing={5} justifyContent="space-between" alignItems="flex-start">
             <Grid item xs={12} md={6} sx={{ position: 'relative' }}>
-                <MotionInView threshold={0.5} variants={varFadeInUp}>
+                <Box variants={varFadeInUp}>
                   <Box component="img" alt="light mode" src="/static/home/landing-mint-img.png" sx={{ margin: { xs: 'auto', md: 'auto 0 auto auto' }, display: { xs: 'block', md: 'none' } }} />
-                </MotionInView>
+                </Box>
             </Grid>
             <Grid item xs={12} md={6}>
                 <ContentStyle>
-                <MotionInView variants={varFadeInUp}>
+                <Box>
                     <Typography component="p" variant="overline" sx={{ textTransform: 'none', mb: 4, color: 'common.white', display: 'block', fontFamily: 'Montserrat', fontWeight: 600, fontSize: { xs: 50, md: 82 }, lineHeight: { xs: '70px', md: '92px' } }}>
                         Mint tokens <br /> backed by <br /> real assets
                     </Typography>
-                </MotionInView>
+                </Box>
                 </ContentStyle>
             </Grid>
             </Grid>
